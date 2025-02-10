@@ -13,7 +13,7 @@ body {
     display: grid;
     width: auto;
     height: auto;
-    margin: 0 100px;
+    margin: 0;
     grid-template-columns: repeat(12, 1fr);
     
     
@@ -34,6 +34,7 @@ body {
     padding: 0 30px; 
     margin-top: 25px;
     z-index: 1;
+    padding: 0 100px;
 }
 
 /* NOMBRE */
@@ -105,14 +106,21 @@ nav ul li:hover a::after {
 
 /* PRESENTATION SECTION */
 
+
+
 .presentation-layout {
+    border: 1px solid red;
     grid-column: 1 / span 12;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 20px;
     height: 497px;
-
+    background-color: #F9F9F9;
+    padding: 0 100px;
+  
 }
+
+
 
 .qa__container {
     grid-column: 2 / span 3 ;
@@ -188,6 +196,9 @@ nav ul li:hover a::after {
 
 
 .skills-layout {
-    grid-column: 1 / span 12;
+    border: 1px solid red;
+    grid-column: 1 / span 12; 
     height: 700px;
+    padding: 0 100px;
+
 }
