@@ -15,6 +15,7 @@ body {
     height: auto;
     margin: 0;
     grid-template-columns: repeat(12, 1fr);
+    padding: 0;
     
     
 }
@@ -31,10 +32,9 @@ body {
     justify-content: space-between;
     height: 60px;
     align-items: center;
-    padding: 0 30px; 
+    padding: 0 5vw; 
     margin-top: 25px;
-    z-index: 1;
-    padding: 0 100px;
+   
 }
 
 /* NOMBRE */
@@ -53,12 +53,9 @@ nav {
 /* Ajustes para la lista */
 nav ul {
     display: flex;
-    gap: 27px;
+    gap: 2vw;
     list-style: none;
-    padding: 0;
-    margin: 0;
     flex-wrap: wrap;
-    flex-shrink: 1;
 }
 
 /* Links */
@@ -114,9 +111,9 @@ nav ul li:hover a::after {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 20px;
-    height: 497px;
+    height: auto;
     background-color: #F9F9F9;
-    padding: 0 100px;
+    padding: 5vw;
   
 }
 
@@ -129,18 +126,18 @@ nav ul li:hover a::after {
     align-items: center;
     justify-content: center;
     gap: 10px;
+    border: 4px solid red;
     
 
 }
 
 .qa__container h1 {
     font-family: "Roboto Mono", serif;
-    font-size: 60px;
-    word-spacing: -20px;
+    font-size: clamp(2rem, 5vw, 4rem);
 }
 
 .qa__container p {
-    padding: 0 40px;
+    padding: 0 2vw;
 }
 
 .unique__color__QA {
@@ -159,11 +156,10 @@ nav ul li:hover a::after {
 }
 
 .img__retrato img {
-    width: 100%; /* Makes it fully responsive inside its container */
-    max-width: 300px; /* Starts at 300px but can shrink */
-    height: auto; /* Maintains aspect ratio */
+    width: 100%;
+    max-width: 250px;
+    height: auto;
     border-radius: 50%;
-    object-fit: cover;
 }
 
 .img__retrato h1 {
@@ -178,16 +174,17 @@ nav ul li:hover a::after {
     align-items: center;
     justify-content: center;
     gap: 10px;
+    border: 4px solid green;
     
 }
 
 .dev_container h1 {
     font-family: "Roboto Mono", serif;
-    font-size: 60px;
+    font-size: clamp(2rem, 5vw, 4rem);
 }
 
 .dev_container p {
-    padding: 0 40px;
+    padding: 0 2vw;
 }
 
 .unique_color_DEV {
@@ -197,8 +194,35 @@ nav ul li:hover a::after {
 
 .skills-layout {
     border: 1px solid red;
-    grid-column: 1 / span 12; 
-    height: 700px;
-    padding: 0 100px;
+    grid-column: 1 / span 12;
+    height: auto;
+    padding: 5vw;
+    background-color: aqua;
 
+}
+
+
+@media (max-width: 768px) {
+    .grid-layout {
+        grid-template-columns: repeat(6, 1fr); /* Reduce columns */
+        padding: 0 5vw;
+    }
+
+    .presentation-layout {
+        grid-template-columns: 1fr; /* Stack elements vertically */
+        padding: 10px;
+    }
+
+    .qa__container, .dev_container, .img__retrato {
+        grid-column: 1 / span 6; /* Take full width */
+        text-align: center;
+    }
+
+    .qa__container h1, .dev_container h1 {
+        font-size: 3rem;
+    }
+
+    .skills-layout {
+        height: auto;
+    }
 }
