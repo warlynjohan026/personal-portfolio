@@ -1,341 +1,465 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+}
+
+li {
+  list-style: none;
 }
 
 body {
-    background-color: black;
+  background-color: black;
 }
 
 .grid-layout {
-    display: grid;
-    width: auto;
-    height: auto;
-    margin: 0;
-    grid-template-columns: repeat(12, 1fr);
-    padding: 0;
-    
-    
+  display: grid;
+  width: auto;
+  height: auto;
+  margin: 0;
+  grid-template-columns: repeat(12, 1fr);
+  padding: 0;
 }
 
 /* HEADER */
 
 .header__nav-bar {
-    grid-column: 1 / span 12;
-    margin-bottom: 30px;
- }
+  grid-column: 1 / span 12;
+  margin-bottom: 30px;
+}
 
 .flex-container {
-    display: flex;
-    justify-content: space-between;
-    height: 60px;
-    align-items: center;
-    padding: 0 5vw; 
-    margin-top: 25px;
-   
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  align-items: center;
+  padding: 0 5vw;
+  margin-top: 25px;
 }
 
 /* NOMBRE */
 .name {
-    font-family: "Roboto Mono", serif;
-    font-size: 25px;
-    padding-left: 15px;
-    color: white;
+  font-family: "Roboto Mono", serif;
+  font-size: 25px;
+  padding-left: 15px;
+  color: white;
 }
 
 /* NAVBAR */
 nav {
-    font-family: "Roboto Mono", serif;
-    font-size: 18px;
+  font-family: "Roboto Mono", serif;
+  font-size: 18px;
 }
 
 /* Ajustes para la lista */
 nav ul {
-    display: flex;
-    gap: 2vw;
-    list-style: none;
-    flex-wrap: wrap;
+  display: flex;
+  gap: 2vw;
+  list-style: none;
+  flex-wrap: wrap;
 }
 
 /* Links */
 nav ul li {
-    position: relative; /* Necesario para posicionar los ::before y ::after */
+  position: relative; /* Necesario para posicionar los ::before y ::after */
 }
 
 nav ul li a {
-    text-decoration: none;
-    color: white;
-    position: relative;
-    transition: color 0.3s ease-in-out;
+  text-decoration: none;
+  color: white;
+  position: relative;
+  transition: color 0.3s ease-in-out;
 }
 
 /* Personalización con ::before y ::after */
 nav ul li a::before {
-    content: '<';
-    position: absolute;
-    left: -10px;
-    opacity: 0;
-    transition: 0.6s;
-    color: #67CA16;
+  content: "<";
+  position: absolute;
+  left: -10px;
+  opacity: 0;
+  transition: 0.6s;
+  color: #67ca16;
 }
 
 nav ul li a::after {
-    content: '/>';
-    position: absolute;
-    right: -10px;
-    opacity: 0;
-    transition: 0.6s;
-    color: #67CA16;
+  content: "/>";
+  position: absolute;
+  right: -10px;
+  opacity: 0;
+  transition: 0.6s;
+  color: #67ca16;
 }
 
 /* Efecto al pasar el mouse */
 
 nav ul li:hover a::before {
-    left: -15px;
-    opacity: 1;
+  left: -15px;
+  opacity: 1;
 }
 
 nav ul li:hover a::after {
-    right: -20px;
-    opacity: 1;
+  right: -20px;
+  opacity: 1;
 }
 
 /* PRESENTATION SECTION */
 
-
-
 .presentation-layout {
-    /*border: 1px solid red;*/
-    grid-column: 1 / span 12;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    gap: 5px;
-    height: 800px;
+  /*border: 1px solid red;*/
+  grid-column: 1 / span 12;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 5px;
+  height: 800px;
 }
 
-
-
 .qa__container {
-    grid-column: 2 / span 3 ;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    /*border: 4px solid red;*/
-    
-
+  grid-column: 2 / span 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  /*border: 4px solid red;*/
 }
 
 .qa__container h1 {
-    font-family: "Roboto Mono";
-    font-size: clamp(2rem, 5vw, 4rem);
-    color: white;
+  font-family: "Roboto Mono";
+  font-size: clamp(2rem, 5vw, 4rem);
+  color: white;
 }
 
 .qa__container p {
-    padding: 0 1vw;
-    color: white;
-    font-family: "Roboto Mono";
+  padding: 0 1vw;
+  color: white;
+  font-family: "Roboto Mono";
 }
 
 .unique__color__QA {
-    color: #67CA16;
+  color: #67ca16;
 }
 
 .img__retrato {
-    grid-column: 5 / span 4;
-    display: flex;
-    gap: 50px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  grid-column: 5 / span 4;
+  display: flex;
+  gap: 50px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .img__retrato img {
-    width: 80%;
-    max-width: 250px;
-    height: auto;
-    border-radius: 50%;
+  width: 80%;
+  max-width: 250px;
+  height: auto;
+  border-radius: 50%;
 }
 
 .img__retrato h1 {
-    font-size: 27px;
-    color: white;
-    font-family: "Roboto Mono";
-
+  font-size: 27px;
+  color: white;
+  font-family: "Roboto Mono";
 }
 
 .dev_container {
-    grid-column: 9 / span 3;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    /*border: 4px solid green;*/
-    
+  grid-column: 9 / span 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  /*border: 4px solid green;*/
 }
 
 .dev_container h1 {
-    font-family: "Roboto Mono", serif;
-    font-size: clamp(2rem, 5vw, 4rem);
-    color: white;
+  font-family: "Roboto Mono", serif;
+  font-size: clamp(2rem, 5vw, 4rem);
+  color: white;
 }
 
 .dev_container p {
-    padding: 0 1vw;
-    color: white;
-    font-family: "Roboto Mono";
+  padding: 0 1vw;
+  color: white;
+  font-family: "Roboto Mono";
 }
 
 .unique_color_DEV {
-    color: #F86A38;
+  color: #f86a38;
 }
 
 /* ABOUT ME SECTION */
 
 .about-me_layout {
-    /*border: 1px solid red;*/
-    grid-column: 1 / span 12;
-    display: flex;
-    flex-direction: column;
-    height: auto;
-    background-color: #162C42;
+  /*border: 1px solid red;*/
+  grid-column: 1 / span 12;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  background-color: #162c42;
 }
 
-.about-me_button{
-    display: flex;
-    justify-content: center;
-    margin-top: 60px;
-    margin-bottom: 60px;
-
+.about-me_button {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
 
 .about-me_button h1 {
-    background-color: #F86A38;
-    font-family: "Roboto Mono";
-    font-size: 24px;
-    padding: 10px 50px 10px 50px;
-    border-radius: 19px;
-    color: white;
+  background-color: #f86a38;
+  font-family: "Roboto Mono";
+  font-size: 24px;
+  padding: 10px 50px 10px 50px;
+  border-radius: 19px;
+  color: white;
 }
 
 .about-me_introductary-text {
-    margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 .about-me_introductary-text h3 {
-    font-family: "Roboto Mono";
-    font-size: 20px;
-    color: #20D775;
-    padding-left: 100px;
+  font-family: "Roboto Mono";
+  font-size: 20px;
+  color: #20d775;
+  padding-left: 100px;
 }
 
 .about-me_info {
-    /*border: 3px solid red;*/
-    padding-left: 150px;
-    padding-right: 150px;
-    padding-bottom: 150px;
+  /*border: 3px solid red;*/
+  padding-left: 150px;
+  padding-right: 150px;
+  padding-bottom: 150px;
 }
 
 .about-me_info p {
-    font-family: "Roboto Mono";
-    font-size: 20px;
-    color: white;
+  font-family: "Roboto Mono";
+  font-size: 20px;
+  color: white;
 }
 
 .about-me_info p span {
-    color: #20D775;
+  color: #20d775;
 }
 
 /* SKILLS SECTION */
 
 .skills-layout {
-    grid-column: 1 / span 12;
-    height: 500px;
-    background-color: #162C42;
-    border-top: 1px solid rgb(64, 57, 143);
-    display: flex;
-    flex-direction: column;
-
+  grid-column: 1 / span 12;
+  height: 500px;
+  background-color: #2c3e50;
+  /*border-top: 1px solid rgb(64, 57, 143);*/
+  display: flex;
+  flex-direction: column;
 }
 
 .skills-header {
-    display: flex;
-    justify-content: center;
-    margin-top: 60px;
-    margin-bottom: 60px;
-    
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
 
 .skills-header h1 {
-    background-color: #F86A38;
-    font-family: "Roboto Mono";
-    font-size: 24px;
-    padding: 10px 50px 10px 50px;
-    border-radius: 19px;
-    color: white;
+  background-color: #f86a38;
+  font-family: "Roboto Mono";
+  font-size: 24px;
+  padding: 10px 50px 10px 50px;
+  border-radius: 19px;
+  color: white;
 }
 
 .skills-container {
-    /*border: 4px solid red;*/
-    padding: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 25px;
+  /*border: 4px solid red;*/
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
 }
 
 .tech {
-    font-family: "Roboto Mono";
-    font-size: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-    background-color: transparent;
-    width: 160px;
-    height: 150px;
-    border-radius: 17px;
-    border: 1px solid #637180;
-    color: white;
-    transition: all 0.3s ease-in-out;
-   
+  font-family: "Roboto Mono";
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  background-color: transparent;
+  width: 160px;
+  height: 150px;
+  border-radius: 17px;
+  border: 1px solid #637180;
+  color: white;
+  transition: all 0.3s ease-in-out;
 }
 
 .tech:hover {
-    box-shadow: 0 0 10px 1px rgba(32, 215, 117, 0.9);
+  box-shadow: 0 0 10px 1px rgba(32, 215, 117, 0.9);
 }
 
 .tech i {
-    font-size: 45px;
+  font-size: 45px;
+}
+
+/*PROFESIONAL BACKGROUND*/
+
+.profesional-background_layoff {
+  grid-column: 1 / span 12;
+  height: auto;
+  background-color: #2c3e50;
+  border: 5px solid rgb(64, 57, 143);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.profesional-card {
+  max-width: 700px;
+  margin-top: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid white;
+  cursor: pointer;
+}
+
+.container-card_job-posting {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #20d775;
+  padding: 10px 10px;
+  gap: 15px;
+  border-radius: 5px;
+  margin-top: 30px;
+}
+
+
+[name="add-outline"] {
+  font-size: 25px;
+  
+}
+
+.job-position {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  padding: 7px 7px;
+}
+
+.job-position h6 {
+  font-size: 15px;
+  font-family: "Roboto Mono";
+}
+
+.job-position span {
+  font-family: "Roboto Mono";
+  font-size: 15px;
+}
+
+.job-position_description {
+  background-color: #241d41;
+  opacity: 0.9;
+  border: 5px solid yellow;
+  display: flex;
+  gap: 10px;
+  
+}
+
+.company-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 15px;
+}
+
+.container-info-_job-position {
+  padding: 0px 20px;
+
+}
+
+.info-header_info_job-posting {
+  display: flex;
+  gap: 20px;
+  padding-top: 20px;
+  font-family: "Roboto Mono";
+  font-size: 12px;
+  color: #FFFFFFBF;
+
+}
+
+.info-header_info_job-posting li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  
+}
+
+[name="location-outline"] {
+  display: flex;
+  align-items: center;
+  
+}
+
+[name="compass-outline"] {
+  display: flex;
+  align-items: center;
+  
+}
+
+.job-position_description img {
+  width: 150px;
+  height: 150px;
+}
+
+.job-position_description p {
+  font-family: "Roboto Mono";
+  padding-top: 10px;
+  line-height: 1.6;
+  font-size: 12px;
+  color: white;
+}
+
+.job-aspects {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0px;
+
+}
+
+.job-aspects h6 {
+  background-color: #f86a38;
+  border-radius: 20px;
+  padding: 5px 15px;
 }
 
 @media (max-width: 768px) {
-    .grid-layout {
-        grid-template-columns: repeat(6, 1fr); /* Reduce columns */
-        padding: 0 5vw;
-    }
+  .grid-layout {
+    grid-template-columns: repeat(6, 1fr); /* Reduce columns */
+    padding: 0 5vw;
+  }
 
-    .presentation-layout {
-        grid-template-columns: 1fr; /* Stack elements vertically */
-        padding: 10px;
-    }
+  .presentation-layout {
+    grid-template-columns: 1fr; /* Stack elements vertically */
+    padding: 10px;
+  }
 
-    .qa__container, .dev_container, .img__retrato {
-        grid-column: 1 / span 6; /* Take full width */
-        text-align: center;
-    }
+  .qa__container,
+  .dev_container,
+  .img__retrato {
+    grid-column: 1 / span 6; /* Take full width */
+    text-align: center;
+  }
 
-    .qa__container h1, .dev_container h1 {
-        font-size: 3rem;
-    }
+  .qa__container h1,
+  .dev_container h1 {
+    font-size: 3rem;
+  }
 
-    .skills-layout {
-        height: auto;
-    }
+  .skills-layout {
+    height: auto;
+  }
 }
