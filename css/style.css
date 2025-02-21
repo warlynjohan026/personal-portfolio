@@ -22,6 +22,10 @@ body {
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* HEADER */
 
 .header__nav-bar {

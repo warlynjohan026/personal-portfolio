@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Warlyn Piña</title>
     <link rel="stylesheet" href="./css/style.css" />
     <link href="https://fonts.cdnfonts.com/css/exo-space" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -27,6 +27,7 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
+    <link rel="icon" href="/resources/avatar.jpeg" />
   </head>
   <body>
     <div class="grid-layout">
@@ -36,12 +37,11 @@
           <span class="name">Warlyn Piña</span>
           <nav>
             <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Skills</a></li>
-              <li><a href="#">Education</a></li>
-              <li><a href="#">Expertise</a></li>
-              <li><a href="#">Portfolio</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about-me">About me</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#expertise">Professional Experience</a></li>
+              <li><a href="#contact">Contact</a></li>
             </ul>
           </nav>
         </header>
@@ -49,7 +49,7 @@
 
       <!--PRESENTATION-->
 
-      <section class="presentation-layout">
+      <section class="presentation-layout" id="home">
         <div class="qa__container">
           <h1><span class="unique__color__QA">QA</span> Engineer</h1>
           <p>
@@ -81,7 +81,7 @@
 
       <!--ABOUT ME-->
 
-      <section class="about-me_layout">
+      <section class="about-me_layout" id="about-me">
         <div class="about-me_button">
           <h1>About me</h1>
         </div>
@@ -116,7 +116,7 @@
       </section>
 
       <!--SKILLS-->
-      <section class="skills-layout">
+      <section class="skills-layout" id="skills">
         <div class="skills-header">
           <h1>My Tech Stack</h1>
         </div>
@@ -158,7 +158,7 @@
 
       <!--PROFESIONAL BACKGROUND-->
 
-      <section class="profesional-background_layoff">
+      <section class="profesional-background_layoff" id="expertise">
         <div class="professional-header">
           <h1>Profesional Experience</h1>
         </div>
@@ -179,15 +179,17 @@
                 </li>
                 <li>
                   <span><ion-icon name="compass-outline"></ion-icon></span>
-                  <span>Newtechsa.com</span>
+                  <span>www.newtechsa.com</span>
                 </li>
               </ul>
               <p>
-                Co-founded Life Coach Elevate, managing end-to-end technical
-                infrastructure, including server architecture, automation
-                pipeline development, leadership of the web development and
-                design team, and driving initiatives to optimize scalability and
-                system performance.
+                My role involves designing and executing test cases, identifying
+                and documenting defects, and collaborating closely with
+                development teams to resolve issues efficiently. I actively
+                contribute to improving software quality by ensuring that
+                products meet functional, performance, and user experience
+                standards. My focus on detail and commitment to quality help
+                maintain the reliability and integrity of our software products.
               </p>
               <div class="job-aspects">
                 <h6>UAT</h6>
@@ -195,23 +197,24 @@
               </div>
             </div>
             <div class="company-logo">
-              <img src="./resources/mock-up_image.jpg" alt="" />
+              <img src="./resources/newtechsa_logo.jpeg" alt="" />
             </div>
           </div>
         </div>
-
-
       </section>
 
       <!--FOOTER-->
 
-      <section class="footer-layoff">
+      <section class="footer-layoff" id="contact">
         <div class="thank-message">
           <p class="salute">Hey, thank you for coming this far!</p>
         </div>
         <p class="connect-invite">Let's connect</p>
         <div class="social-network_stack">
-          <a class="social-button" href="https://www.linkedin.com/in/warlyn-pi%C3%B1a-5a39a91a6/">
+          <a
+            class="social-button"
+            href="https://www.linkedin.com/in/warlyn-pi%C3%B1a-5a39a91a6/"
+          >
             <span>
               <ion-icon class="social-icons" name="logo-linkedin"></ion-icon>
             </span>
@@ -227,47 +230,9 @@
             </span>
           </a>
         </div>
-        
       </section>
 
-
-
-      <!--CONTACT-->
-
-      <!--WAIT
-
-        <div class="box" id="header">
-            HEADER
-        </div>
-
-        <div class="box" id="content">
-            Contenido
-        </div>
-
-        <div class="box" id="footer">
-            Footer
-        </div>
-                 -->
     </div>
-
-    <!--HEADER
-
-    <header class="flex-container">
-        <span class="name">Warlyn Piña</span>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Education</a></li>
-                <li><a href="#">Expertise</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-
--->
-  <script src="./JS/app.js"></script>
+    <script src="./JS/app.js"></script>
   </body>
 </html>
