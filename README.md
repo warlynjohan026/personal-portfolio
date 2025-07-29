@@ -1,48 +1,48 @@
 # Personal Portfolio
 
-Este proyecto es mi portafolio personal y hoja de vida web. Aquí muestro mis habilidades, experiencia y algunos proyectos. Es mi primer desarrollo web oficial realizado durante mi preparación en el Full Stack Career Path.
+This project is my personal portfolio and online resume. Here I showcase my skills, experience, and some of my projects. It is my first official web development project, created during my preparation for the Full Stack Career Path.
 
-## Tecnologías utilizadas
+## Technologies Used
 
 - **HTML**
 - **CSS**
-- **JavaScript** (básico)
+- **JavaScript** (basic)
 
-## Descripción
+## Description
 
-La página está diseñada para presentarme profesionalmente, resaltar mis proyectos y facilitar el contacto. Es un proyecto sencillo, pero representa mi primer acercamiento práctico al desarrollo web y la construcción de una presencia personal en línea.
+The page is designed to present myself professionally, highlight my projects, and make it easy to get in touch. It is a simple project, but it represents my first hands-on experience with web development and building a personal online presence.
 
-## Instalación y uso
+## Installation and Usage
 
-Actualmente, este portafolio solo se ejecuta localmente en mi máquina. Si deseas ejecutarlo tú también:
+Currently, this portfolio only runs locally on my machine. If you would like to run it as well:
 
-1. **Clona este repositorio:**
+1. **Clone this repository:**
    ```bash
    git clone https://github.com/warlynjohan026/personal-portfolio.git
    ```
-2. **Abre la carpeta del proyecto:**
+2. **Open the project folder:**
    ```bash
    cd personal-portfolio
    ```
-3. **Abre el archivo `index.html` en tu navegador favorito:**
-   - Puedes hacer doble clic en el archivo, o
-   - Usar la terminal:
+3. **Open the `index.html` file in your favorite browser:**
+   - You can double-click the file, or
+   - Use the terminal:
      ```bash
-     start index.html  # en Windows
-     open index.html   # en MacOS
-     xdg-open index.html # en Linux
+     start index.html  # on Windows
+     open index.html   # on MacOS
+     xdg-open index.html # on Linux
      ```
 
-> **Nota:** No requiere instalación de dependencias ni servidores adicionales.
+> **Note:** No dependencies or additional servers are required.
 
-## Sobre mí
+## About Me
 
-Este proyecto fue creado como parte de mi formación como desarrollador Full Stack. Es el resultado de mis primeros pasos en el desarrollo web, explorando HTML, CSS y JavaScript.
+This project was created as part of my training as a Full Stack developer. It is the result of my first steps in web development, exploring HTML, CSS, and JavaScript.
 
-## Contacto
+## Contact
 
-Si tienes sugerencias o deseas contactarme, puedes escribirme por GitHub.
+If you have suggestions or want to contact me, you can write to me via GitHub.
 
 ---
 
-¡Gracias por visitar mi portafolio!
+Thank you for visiting my portfolio!
